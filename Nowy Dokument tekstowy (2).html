@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стовпчики з кольоровим текстом</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap; /* Дозволяє переносити стовпчики на новий ряд */
+        }
+        .column {
+            flex: 1; /* Кожен стовпчик займає однакову ширину */
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Бордер враховується в ширину */
+        }
+        .row {
+            margin: 10px 0; /* Відступи між рядками */
+        }
+        .row1 { color: red; }    /* Колір для першого рядка */
+        .row2 { color: blue; }   /* Колір для другого рядка */
+        .row3 { color: green; }  /* Колір для третього рядка */
+        .row4 { color: orange; } /* Колір для четвертого рядка */
+        .row5 { color: purple; } /* Колір для п'ятого рядка */
+        .row6 { color: brown; }  /* Колір для шостого рядка */
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column">
+        <div class="row row1">Стовпчик 1 - Рядок 1</div>
+        <div class="row row2">Стовпчик 1 - Рядок 2</div>
+    </div>
+    <div class="column">
+        <div class="row row3">Стовпчик 2 - Рядок 1</div>
+        <div class="row row4">Стовпчик 2 - Рядок 2</div>
+    </div>
+    <div class="column">
+        <div class="row row1">Стовпчик 3 - Рядок 1</div>
+        <div class="row row2">Стовпчик 3 - Рядок 2</div>
+    </div>
+</div>
+
+<div class="container" style="flex-direction: column; margin-top: 20px;">
+    <div class="column" style="flex-direction: column; display: flex;">
+        <div class="row row3">Рядок 1</div>
+        <div class="row row4">Рядок 2</div>
+        <div class="row row1">Рядок 3</div>
+        <div class="row row2">Рядок 4</div>
+    </div>
+    <div class="column" style="flex-direction: column; display: flex;">
+        <div class="row row5">Рядок 1</div>
+        <div class="row row5">Рядок 2</div>
+        <div class="row row5">Рядок 3</div>
+        <div class="row row5">Рядок 4</div>
+    </div>
+    <div class="column" style="flex-direction: column; display: flex;">
+        <div class="row row6">Рядок 1</div>
+        <div class="row row6">Рядок 2</div>
+        <div class="row row6">Рядок 3</div>
+        <div class="row row6">Рядок 4</div>
+    </div>
+</div>
+
+</body>
+</html>

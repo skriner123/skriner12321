@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стовпчики з текстом</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap; /* Дозволяє переносити стовпчики на новий ряд */
+        }
+        .column {
+            flex: 1; /* Кожен стовпчик займає однакову ширину */
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Бордер враховується в ширину */
+        }
+        .row {
+            margin: 10px 0; /* Відступи між рядками */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Перші 3 стовпчики -->
+<div class="container">
+    <div class="column">
+        <div class="row">Стовпчик 1 - Рядок 1</div>
+        <div class="row">Стовпчик 1 - Рядок 2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 2 - Рядок 1</div>
+        <div class="row">Стовпчик 2 - Рядок 2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 3 - Рядок 1</div>
+        <div class="row">Стовпчик 3 - Рядок 2</div>
+    </div>
+</div>
+
+<!-- Два стовпчики з двома рядками -->
+<div class="container">
+    <div class="column">
+        <div class="row">Стовпчик 4 - Рядок 1</div>
+        <div class="row">Стовпчик 4 - Рядок 2</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 5 - Рядок 1</div>
+        <div class="row">Стовпчик 5 - Рядок 2</div>
+    </div>
+</div>
+
+<!-- Один рядок з двома реченнями -->
+<div class="container">
+    <div class="column">
+        <div class="row">Це перше речення. Це друге речення.</div>
+    </div>
+</div>
+
+<!-- Три стовпчики з трьома рядками -->
+<div class="container">
+    <div class="column">
+        <div class="row">Стовпчик 6 - Рядок 1</div>
+        <div class="row">Стовпчик 6 - Рядок 2</div>
+        <div class="row">Стовпчик 6 - Рядок 3</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 7 - Рядок 1</div>
+        <div class="row">Стовпчик 7 - Рядок 2</div>
+        <div class="row">Стовпчик 7 - Рядок 3</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 8 - Рядок 1</div>
+        <div class="row">Стовпчик 8 - Рядок 2</div>
+        <div class="row">Стовпчик 8 - Рядок 3</div>
+    </div>
+</div>
+
+<!-- Три стовпчики з чотирма рядками -->
+<div class="container">
+    <div class="column">
+        <div class="row">Стовпчик 9 - Рядок 1</div>
+        <div class="row">Стовпчик 9 - Рядок 2</div>
+        <div class="row">Стовпчик 9 - Рядок 3</div>
+        <div class="row">Стовпчик 9 - Рядок 4</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 10 - Рядок 1</div>
+        <div class="row">Стовпчик 10 - Рядок 2</div>
+        <div class="row">Стовпчик 10 - Рядок 3</div>
+        <div class="row">Стовпчик 10 - Рядок 4</div>
+    </div>
+    <div class="column">
+        <div class="row">Стовпчик 11 - Рядок 1</div>
+        <div class="row">Стовпчик 11 - Рядок 2</div>
+        <div class="row">Стовпчик 11 - Рядок 3</div>
+        <div class="row">Стовпчик 11 - Рядок 4</div>
+    </div>
+</div>
+
+</body>
+</html>
